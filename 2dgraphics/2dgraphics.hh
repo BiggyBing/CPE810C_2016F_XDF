@@ -19,6 +19,7 @@ private:
     //store all source data in SVG format
     vector<string> allObjects;
     /**
+        TODO:
         read source file and set all drawing objects to allObject variable
         assume each line in source file represents one object, data is stored by certain rules
         The rules of how to store drawing data will be decided in future
@@ -36,7 +37,6 @@ public:
     }
     /**
         set path of source data file
-        TODO: RS. What will be done in future
     */
     string getPath() const {return path;}
     /**
@@ -44,7 +44,12 @@ public:
     */
     string getsourceFile() const {return sourceFile;}
     /**
+        TODO:
         read from variable allObject and display them on mainwindow
     */
-    virtual void paintEvent(QPaintEvent* event){}
+    virtual void paintEvent(QPaintEvent* event){
+	  for(auto vector::iterator iter = allObjects.begin; iter != allObjects.end(); iter++){
+	    display each object at certain position on to mainwindow(ostream)
+      }
+    }
 }
