@@ -36,6 +36,7 @@ public:
     }
     /**
         set path of source data file
+        TODO: RS. What will be done in future
     */
     string getPath() const {return path;}
     /**
