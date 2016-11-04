@@ -19,6 +19,8 @@ private:
     //store all source data in SVG format
     vector<string> allObjects;
     //read source file and set all drawing objects to allObject variable
+    //assume each line in source file represents one object, data is stored by certain rules
+    //The rules of how to store drawing data will be decided in future
     setDrawingObjects(){}
 public:
     //constructor
