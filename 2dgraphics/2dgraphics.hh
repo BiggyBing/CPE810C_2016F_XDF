@@ -21,7 +21,7 @@ private:
     //read source file and set all drawing objects to allObject variable
     //assume each line in source file represents one object, data is stored by certain rules
     //The rules of how to store drawing data will be decided in future
-    setDrawingObjects(){}
+    void setDrawingObjects(){}
 public:
     //constructor
     Draw2DGraphics(){}
