@@ -13,9 +13,9 @@ using namespace std;
 class Draw2DGraphics : public QWidget{
 private:
     //source data file path
-    static string path;
+    static string m_path;
     //source data file name
-    static string sourceFile;
+    static string m_sourceFile;
     //store all source data in SVG format
     vector<string> allObjects;
     //read source file and set all drawing objects to allObject variable
@@ -27,8 +27,8 @@ public:
     Draw2DGraphics(){}
     //in order to get source data, this method will be implemented by other class
     static void setDataSource(const string& path_, const string& sourceFile_){
-        path = path_;
-        sourceFile = sourceFile_;
+      m_path = path_;
+      m_sourceFile = sourceFile_;
     }
     //set path of source data file
     string getPath() const {return path;}
