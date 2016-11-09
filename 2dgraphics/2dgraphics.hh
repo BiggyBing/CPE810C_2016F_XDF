@@ -13,9 +13,9 @@ using namespace std;
 class Draw2DGraphics : public QWidget{
 private:
     //source data file path
-    static string m_path;
+    string m_path;
     //source data file name
-    static string m_sourceFile;
+    string m_sourceFile;
     //store all source data in SVG format
     vector<string> allObjects;
     /**
